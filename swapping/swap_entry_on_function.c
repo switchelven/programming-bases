@@ -11,15 +11,15 @@ void swap(int a, int b) {
 int main(int argc, char *argv[]) {
   int a, b;
 
-  if (argc != 2) { // check that we received 2 arguments
-    printf("Swap expect 2 arguments, %d received!", argc)
-    return 1 // return 1 cause we received an unexpected number of arguments witch is an error
+  if (argc != 3) { // check that we received 2 arguments
+    printf("Swap expect 2 arguments, %d received!", argc);
+    return 1; // return 1 cause we received an unexpected number of arguments witch is an error
   }
 
-  a = atoi(argv[0])
-  b = atoi(argv[1])
+  a = atoi(argv[1])
+  b = atoi(argv[2]);
 
-  swap(a, b)
+  swap(a, b);
 
-  return 0
+  return 0;
 }
